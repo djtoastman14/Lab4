@@ -9,7 +9,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Space
             android:layout_width="match_parent"
@@ -32,7 +36,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Soccer Team Manager"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
         <EditText
             android:id="@+id/teamName"
@@ -40,10 +48,39 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:ems="10"
+            android:hint="Enter Team Name"
             android:inputType="textPersonName"
-            android:text="(Please Enter a Team Name)"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Team Name" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/zipCode"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Enter Zip Code"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Zip Code" />
 
     </LinearLayout>
 
