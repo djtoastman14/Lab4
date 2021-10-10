@@ -24,4 +24,9 @@ public class MainActivity extends AppCompatActivity {
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
     }
+
+    public void OnSetAvatarButton(View view) {
+        Intent inten = new Intent(getApplicationContext(), ProfileActivity.class);
+        startActivityForResult(inten,0);
+    }
 }
